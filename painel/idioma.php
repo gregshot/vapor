@@ -51,7 +51,7 @@
                             <tr>
                                 <td><?= $idioma['nome'] ?></td>
                                 <td class="links"><a href="idioma_editar.php?id=<?= $idioma['id'] ?>">Editar</a></td>
-                                <td class="links"><a onclick="excluirIdioma(<?= $idioma['id']?>)" href="#">Excluir</a></td>
+                                <td class="links"><a onclick="removerElementoPorId(msg_sem)" href="#">Excluir</a></td>
                             </tr>
 
                         <?php } ?>
