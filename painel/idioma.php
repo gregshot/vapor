@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/global.css">
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/scripts.js"></script>
     <title>Idiomas</title>
 </head>
 
@@ -50,7 +51,7 @@
                             <tr>
                                 <td><?= $idioma['nome'] ?></td>
                                 <td class="links"><a href="idioma_editar.php?id=<?= $idioma['id'] ?>">Editar</a></td>
-                                <td class="links"><a href="idioma_excluir.php?id=<?= $idioma['id'] ?>">Excluir</a></td>
+                                <td class="links"><a onclick="excluirIdioma(<?= $idioma['id']?>)" href="#">Excluir</a></td>
                             </tr>
 
                         <?php } ?>
